@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+</head>
+<body style="background-color: azure;">
+    <h1 style="text-align: center;">Mi primera web</h1>
+    <h2>Bienvenidos a mi web</h2>
+
+    <!-- Etiquetas para textos -->
+
+    <p>Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de sentido. También es una composición de caracteres imprimibles generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.</p>
+
+    <p>Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de sentido. También es una composición de caracteres imprimibles generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</p>
+    <br/>
+    <hr/>
+
+    <h3>Tercer parte de la pagina</h3>
+    <!-- Em=indica cursiva -->
+    <p>Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de sentido.<strong>  También es una composición de caracteres imprimibles generados por un algoritmo de cifrado que, <em> no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.</em></strong></p>
+
+    <!-- LISTAS -->
+    <!-- Ordenadas -->
+    <h4>Principales ciudades de España</h4>
+    <ol>
+        <li>Madrid</li>
+        <li>Barcelona</li>
+        <li>Valencia</li>
+        <li>Sevilla</li>
+     </ol>
+
+    <!-- Desordenadas -->
+    <h4>Listado de Frutas</h4>
+     <ul>
+        <li>Pera
+            <ul>
+                <li>Peso: 14g</li>
+                <li>Estado: Bueno</li>
+            </ul>
+        </li>
+        <li>Papaya</li>
+        <li>Sandía</li>
+        <li>Mango</li>
+     </ul>
+
+     <hr>
+     <h2>Imagenes en HTML</h2>
+     <img src="imagenes/flores.webp" title="Flores" style="height:200px; width:260px;" ></img>
+
+    <hr>
+    <h2>Tabla</h2>
+     <!-- Tablas -->
+     <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Pais</th>
+        </tr>
+        <tr>
+            <td>Sara</td>
+            <td>Cortes</td>
+            <td>Sucre</td>
+        </tr>
+        <tr>
+            <td>Camilo</td>
+            <td colspan="2">Playalta</td>
+        </tr>
+     </table>
+
+     <hr>
+     <h2>Formulario usuarios</h2>
+     <form>
+        <p>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre">
+        </p>
+
+        <p>
+            <label for="apellido">Apellido: </label>
+            <input name=apellido type="text" placeholder="Escribe tu Apellido..." >
+        </p>
+
+        <p>
+            <label for="descripcion">Descripcion:</label>
+            <textarea name="descripcion"></textarea>
+        </p>
+
+        <p>
+            <!-- <label for="descripcion">Descripcion:</label> -->
+            <input type="radio" name="genero" value="hombre"> Hombre</type=radio> <br>
+            <input type="radio" name="genero" value="mujer"> Mujer</input> <br>
+            <input type="radio" name="genero" value="nada"> Nada</input> <br>
+        </p>
+
+        <select>
+            <option value="hombre">Hombre</option>
+            <option  value="mujer">Mujer</option>
+            <option value="nada">Otro</option>
+        </select>
+        <br>
+
+        <!-- Enviar formulario -->
+        <input type="submit" value="Enviar formulario">
+        
+     </form>
+
+</body>
+</html>
