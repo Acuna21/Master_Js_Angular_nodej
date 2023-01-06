@@ -6,28 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio DOM, EVENTOS Y FUNCIONES</title>
 
+    <link rel="stylesheet" href="/css/ejercicio.css">
+
     <script src="/js/eventos/ejercicio.js"></script>
+
+
 </head>
 <body>
+    <!-- 
+        1. Formulario: Nombre, Apellidos, Edad
+        2. Botone enviar formulario: evento submit 
+        3. Mostrar esos datos por pantalla
+        4. Validación de formulario
+     -->
     
     <h1>EJERCICIO DOM, EVENTOS Y FUNCIONES</h1>
 
-    <form action="">
-        <label for="name">Nombre: </label>
-        <input type="text" name="name" id="name">
-        <br/>
-        <br/>
-
-        <label for="lastName">Apellidos: </label>
-        <input type="text" name="lastName" id="lastNameClien">
-        <br/>
-        <br/>
-
-        <label for="old">Edad:</label>
-        <input type="text" name="old" id="old">
-        
-        <br/>
-        <br/>
-    </form>
+    <div class="test">
+        <form action="" method="POST" id="firstForm" onsubmit="return false">
+            <label>Nombre: 
+                <input type="text" name="name" id="name">
+            </label>
+            <span id="errorName"></span>
+            <br/>
+            <br/>
+    
+            <label>Apellidos: 
+                <input type="text" name="lastName" id="lastNameClien">
+            </label>
+            <span id="errorLastname"></span>
+            <br/>
+            <br/>
+    
+            <label>Edad:
+                <input type="text" name="age" id="age">
+            </label>
+            <span id="errorAge"></span>
+            
+            <br/>
+            <br/>
+            <button type="submit" id="send" value="Enviar">Enviar</button>
+        </form>
+    </div>
+    <div class="test result">
+        <h3>Información ingresada</h3>
+        <hr>
+        <p id="nameI">
+            <strong>Nombre: </strong> <span></span>
+        </p>
+        <p id="lastNameI">
+            <strong> Apellidos: </strong> <span></span>
+        </p>
+        <p id="ageI">
+            <strong> Edad:</strong> <span></span>
+        </p>
+    </div>
 </body>
 </html>

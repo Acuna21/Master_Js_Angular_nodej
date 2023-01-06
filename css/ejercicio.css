@@ -1,0 +1,30 @@
+.test{
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin:20px;
+    background-color: azure;
+    padding:20px;
+    
+}
+
+#send{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.result{
+    border: 1px solid;
+    display: none;
+    padding: 5px;
+}
+
+
+.result h3{
+    text-align: center;
+}
+
+#errorLastname, #errorAge, #errorName{
+    color: red;
+}
