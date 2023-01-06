@@ -28,12 +28,12 @@ boton.addEventListener('click',function(){
 
 //Mouse Over 
 boton.addEventListener('mouseover',function(){
-    boton.style.background="#000";
+    this.style.background="#000";
 })
 
 
 // Mouseout
 boton.addEventListener('mouseout',function(){
-    boton.style.background="yellow";
+    this.style.background="yellow";
 })
 
