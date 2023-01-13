@@ -12,6 +12,7 @@ window.addEventListener('load', function(){
 
     });
 
+
     for (var i in localStorage){
         var li=document.createElement("li");
         if(typeof localStorage[i]=="string"){
