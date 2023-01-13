@@ -5,13 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSON</title>
-    <script src="/js/objects/JSON.js"></script>
+    <!-- <script src="/js/objects/JSON.js"></script> -->
+    <!-- <script src="/js/local_storage/01_basic.js"></script> -->
+    <script src="/js/local_storage/ejercicio.js"></script>
 </head>
 <body>
-    <h1>Objetos </h1>
-    <div id="cajaPeliculas">
+    <h1>Peliculas</h1>
+    
+        <form id="ListMovies" action="">
+            <input type="text" id="addMovies">
+            <button type="submit">Guardar</button>
 
-    </div>
+        </form>
+        <h2>Peliculas ingresadas</h2>
+        <ul id="listResult">
+        </ul>
+
+        <h2>Borra tu pelicula</h2>
+        <form id="removeMovies" action="">
+            <input type="text" id="deleteMovies">
+            <button type="submit">Guardar</button>
+
+        </form>
+    
+</div>
     
 </body>
 </html>

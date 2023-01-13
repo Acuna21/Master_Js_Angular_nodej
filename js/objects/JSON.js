@@ -24,4 +24,5 @@ window.addEventListener('load', function(){
     }
 
 })
+
 // Cambios actualizados
