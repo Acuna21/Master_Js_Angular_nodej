@@ -12,11 +12,13 @@ fetch("https://jsonplaceholder.typicode.com/users")
         
         users.map((user,i)=>{
             //Mostrar los datos del usuario en la pagina
-            let name=document.createElement("h2");
+            let name=document.createElement("p");
 
             name.innerHTML=i+". "+user.name+" -->"+user.phone;
             // nickname.innerHTML=i
             div_usuarios.append(name);
+
+            document.querySelector(".loading").style.display=("none");
 
             // Los uaurios salen del backend
 
