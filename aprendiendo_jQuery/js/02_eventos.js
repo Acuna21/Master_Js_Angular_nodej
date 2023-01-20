@@ -25,6 +25,18 @@ $(document).ready(function(){
 
     caja.hover(cambiaRojo, cambiaVerde);
 
+    // Click y doble click
+    caja.click(function(){
+        $(this).css("background", "blue")
+                .css("color", "white");
+    });
+
+    caja.dblclick(function(){
+        $(this).css("background", "yellow")
+                .css("color", "black");
+    });
+
+
     
 
 
