@@ -36,8 +36,19 @@ $(document).ready(function(){
                 .css("color", "black");
     });
 
+    // evento focus y blur
+    let name1=$("#name");
 
-    
+    name1.focus(function(){
+        $(this).css("border","2px solid green");
+    });
+
+    name1.blur(function(){
+        $(this).css("border","1px solid trasparent");
+        $("#date").text($(this).val()).show();  //mostrar elemento
+
+    });
+
 
 
 
