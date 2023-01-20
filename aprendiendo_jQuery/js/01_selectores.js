@@ -36,30 +36,11 @@ $(document).ready(function(){
     })
 
 
-    
-
     // Selecctores de atributos
     $("[title='Google']").css("color", "red");
     $("[title='Facebook']").css("color", "red");
     $("[title='Youtube']").css("color", "red");
     
-    
-    
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
 
 });
 
