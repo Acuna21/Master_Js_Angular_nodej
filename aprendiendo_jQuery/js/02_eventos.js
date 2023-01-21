@@ -38,6 +38,7 @@ $(document).ready(function(){
 
     // evento focus y blur
     let name1=$("#name");
+    let date= $("#date");
 
     name1.focus(function(){
         $(this).css("border","2px solid green");
@@ -45,9 +46,31 @@ $(document).ready(function(){
 
     name1.blur(function(){
         $(this).css("border","1px solid trasparent");
-        $("#date").text($(this).val()).show();  //mostrar elemento
+        date.text($(this).val()).show();  //mostrar elemento
 
     });
+
+    // Mousedown y mouseup 
+
+    // cuando presiono el mouse
+    date.mousedown(function () { 
+        $(this).css("border-color","blue");
+    });
+
+    // cuando suelto el mouse
+    date.mouseup(function () { 
+        $(this).css("border-color","red");
+        
+    });
+
+    // Mousemove-->Seguir al raton
+  $(document).mousemove(function (event) { 
+    let follow=$("#follow");
+    follow.css("left",event.clientX)
+                 .css("top",event.clientY);
+  });
+
+
 
 
 
