@@ -6,7 +6,25 @@ propiedades (caracteristicas del objeto)
 metodos(funciones o acciones del objeto)
 */
 
-class Camiseta{
+
+// interface
+interface CamisetaBase{
+    setColor(color);
+    getColor();
+
+}
+
+
+//Decoradores--->adicionar funcionalidades
+function estampar(logo:string){
+    return function(target:Function) {
+        target.prototype.estampacion=function():void{
+            console.log("camiseta estampada con el logo de "+ logo);
+        }
+    }
+}
+
+class Camiseta implements CamisetaBase{
     private precio:number;
     private color:string;
     private modelo:string;
@@ -32,9 +50,34 @@ class Camiseta{
 
 }
 
-let camiseta=new Camiseta("rojo","xs","kariby","elegante",344);
- 
+// clase hija
+class Sudadera extends Camiseta{
+    capucha:boolean;
+
+    setCapucha(capucha:boolean){
+        this.capucha=capucha;
+    }
+
+    getCapucha():boolean{
+        return this.capucha;
+    };
+
+}
+
+let camiseta=new Camiseta("red","L","nike","Elegante",5000);
 console.log(camiseta);
+
+let sudaderaNike=new Sudadera("amarillo","m","nike","deportiva",1000);
+sudaderaNike.setCapucha(false);
+sudaderaNike.setColor("Red");
+console.log(sudaderaNike);
+
+
+
+
+
+
+
 
 
 
